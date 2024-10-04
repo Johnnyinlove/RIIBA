@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite-typography'),
+  ],
 }
 
 const withMT = require("@material-tailwind/react/utils/withMT");
