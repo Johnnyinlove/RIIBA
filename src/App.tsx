@@ -3,13 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from "./NavInicio";
+import CarouselDefault from "./CarouselSlider";
 import Card from './Card';
 import Footer from "./Footer";
 function App() {
-  const [count, setCount] = useState(0)
-
-
-
 
   return (
     <>
@@ -19,10 +16,10 @@ function App() {
    <body>
 
 
+<CarouselDefault/>
 
 
-
-{/* <Card/> */}
+<Card/>
    </body>
 
    <footer>
