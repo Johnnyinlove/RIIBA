@@ -19,7 +19,7 @@ function App() {
 <CarouselDefault/>
 
 
-<Card/>
+{/* <Card/> */}
    </body>
 
    <footer>
