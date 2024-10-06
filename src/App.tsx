@@ -6,6 +6,7 @@ import Navbar from "./NavInicio";
 import CarouselDefault from "./CarouselSlider";
 import Card from './Card';
 import Footer from "./Footer";
+import Example from "./Example";
 function App() {
 
   return (
@@ -14,7 +15,7 @@ function App() {
   <Navbar/>
    
    <body>
-
+{/* <Example/> */}
 
 <CarouselDefault/>
 
