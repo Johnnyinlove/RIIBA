@@ -11,16 +11,19 @@ function App() {
 
   return (
     <>
- 
+<header>
   <Navbar/>
-   
-   <body>
-{/* <Example/> */}
+  </header>
 
+   <body className=' flex w-auto bg-deep-orange-900'>
+{/* <Example/> */}
 <CarouselDefault/>
 
 
+
 {/* <Card/> */}
+
+
    </body>
 
    <footer>
