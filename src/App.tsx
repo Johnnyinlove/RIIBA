@@ -6,7 +6,7 @@ import Navbar from "./NavInicio";
 import CarouselDefault from "./CarouselSlider";
 import Card from './Card';
 import Footer from "./Footer";
-import Example from "./Example";
+import CollapseDefault from "./Colapse";
 function App() {
 
   return (
@@ -15,9 +15,10 @@ function App() {
   <Navbar/>
   </header>
 
-   <div className=' relative pb-[700px] w-full bg-deep-orange-900'>
+   <div className=' relative pb-[700px] w-full bg-white'>
 <CarouselDefault/>
 <Card/>
+<CollapseDefault/>
    </div>
 
    <footer>
