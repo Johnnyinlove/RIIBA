@@ -5,8 +5,8 @@ import Carousel from 'react-material-ui-carousel'
 //   "h-full w-full object-cover rounded-b-xl"
 // ];
 
-let clases=['flex flex-wrap justify-center',
-  'h-auto max-w-xs p-2'
+let clases=['flex  justify-center  h-[38rem] w-full',
+  'w-full h-full   object-cover rounded-b-3xl'
 ];
 
 
@@ -32,17 +32,22 @@ let ImagenInfo = [
 
 // console.log(typeof clases[0]);
 
+// className='relative xl:-top-16 lg:-top-16 2xl:-top-24 min-[320px]:-top-14 max-[600px]:-top-14 sm:-my-96 w-full   overflow-hidden'>   
+
 
 export default function CarouselDefault() {  
   return (  
 <Carousel autoPlay={true}
             interval={2000} // Duración de la transición en milisegundos  
- className='relative xl:-top-16  min-[320px]:-top-14 max-[600px]:-top-14 sm:-my-96 w-full   overflow-hidden'>   
+ className=' w-full  overflow-hidden'>   
   {ImagenInfo.map((img, index) => (  
-    <div key={index} className='flex justify-center w-full h-96'>  
-      <img className='w-full h-full object-cover rounded-b-3xl' src={img.src} alt={img.alt} />  
+    <div key={index} className={img.ClassNameDiv}>  
+      <img className={img.ClassNameImag} src={img.src} alt={img.alt} />  
     </div>  
   ))}  
 </Carousel>
+
+
+
   );  
 }

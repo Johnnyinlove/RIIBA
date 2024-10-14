@@ -15,16 +15,10 @@ function App() {
   <Navbar/>
   </header>
 
-   <body className=' flex w-auto bg-deep-orange-900'>
-{/* <Example/> */}
+   <div className=' relative pb-[700px] w-full bg-deep-orange-900'>
 <CarouselDefault/>
-
-
-
-{/* <Card/> */}
-
-
-   </body>
+<Card/>
+   </div>
 
    <footer>
 <Footer/>
