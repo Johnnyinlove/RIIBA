@@ -17,11 +17,11 @@ export default function CollapseDefault() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <Button className="h-40" color="secondary" onClick={toggleOpen}>
+        <Button className="h-40 " color="secondary" onClick={toggleOpen}>
             <AvatarWithText/>
         </Button>
       <Collapse in={open}>
-        <Card className="my-4 mx-auto w-8/12">
+        <Card className="my-4 mx-auto max-w-md w-full">
           <CardContent>
             <Typography>
               Use our Tailwind CSS collapse for your website. You can use if for
