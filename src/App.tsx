@@ -18,7 +18,7 @@ function App() {
 
    <div className=' relative pb-[700px] w-full bg-white'>
 <CarouselDefault/>
-<Card/>
+{/* <Card/> */}
 
 {/* <div className='flex flex-col items-center mx-auto max-w-md w-full'>  */}
     {/* <CollapseD|efault  />   */}

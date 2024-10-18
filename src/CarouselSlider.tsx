@@ -5,24 +5,36 @@ import Carousel from 'react-material-ui-carousel'
 //   "h-full w-full object-cover rounded-b-xl"
 // ];
 
-let clases=['flex  justify-center  h-[38rem] w-full',
-  'w-full h-full   object-cover rounded-b-3xl'
+let clases=['flex  justify-center  h-[36rem] relative overflow-hidden',
+  ' h-auto w-auto object-contain rounded-b-3xl'
 ];
+
+// object-contain // esta es la que me permite ajustar la imagen al div
 
 
 let ImagenInfo = [  
-  { src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+  { src: "https://cdn.pixabay.com/photo/2020/03/06/09/23/veterinarian-4906607_640.jpg",
      alt:"imgen 1", 
      ClassNameDiv: clases[0],
      ClassNameImag: clases[1]
     },  
-  { src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+  { src: "https://cdn.pixabay.com/photo/2024/06/28/09/45/veterinarian-8859098_640.jpg",
      alt:"imgen 2", 
      ClassNameDiv: clases[0],
      ClassNameImag: clases[1]
     },  
-  { src: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+  { src: "https://cdn.pixabay.com/photo/2019/06/24/15/30/sheep-4296302_640.jpg",
      alt:"imgen 3",
+     ClassNameDiv: clases[0],
+     ClassNameImag: clases[1]
+      },
+  { src: "https://cdn.pixabay.com/photo/2017/08/06/18/52/pony-2595144_640.jpg",
+     alt:"caballos",
+     ClassNameDiv: clases[0],
+     ClassNameImag: clases[1]
+      },  
+       { src: "https://cdn.pixabay.com/photo/2024/02/23/15/16/ai-generated-8592228_640.jpg",
+     alt:"caballos poni",
      ClassNameDiv: clases[0],
      ClassNameImag: clases[1]
       },  
