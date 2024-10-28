@@ -8,6 +8,9 @@ import Card from './Card';
 import Footer from "./Footer";
 import CollapseDefault from "./Colapse";
 import GalleryWithTab from "./Galery";
+import Form from "./Form";
+import RegisterForm from "./FormValidation";
+
 function App() {
 
   return (
@@ -18,6 +21,10 @@ function App() {
 
    <div className=' relative pb-[700px] w-full bg-white'>
 <CarouselDefault/>
+
+<Form/>
+{/* <RegisterForm/> */}
+
 {/* <Card/> */}
 
 {/* <div className='flex flex-col items-center mx-auto max-w-md w-full'>  */}
