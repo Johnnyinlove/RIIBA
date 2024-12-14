@@ -33,3 +33,44 @@ html, body {
   animation: burbujas 3s linear infinite;
 
 }
+
+
+
+.bg-card {  
+  position: relative;  
+  max-width: 400px; /* Cambiar según tus necesidades */  
+  margin: 20px auto;  
+  overflow: hidden; /* Evita el desbordamiento del contenido */  
+  border-radius: 10px; /* Bordes redondeados */  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra del card */  
+}  
+
+.bg-card::before {  
+  content: '';  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  background-image: url('https://cdn.pixabay.com/photo/2014/05/05/14/14/meadow-338211_640.jpg');  
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */  
+  background-position: center; /* Centra la imagen */  
+  opacity: 0.5; /* Opacidad de la imagen de fondo */  
+  z-index: 1; /* Coloca detrás del contenido */  
+}  
+
+.fade-in {  
+  opacity: 1;  
+  transition: opacity 1s ease, transform 1s ease;   
+}  
+
+/* Para hacer que el componente esté oculto inicialmente */  
+.bg-card {  
+  opacity: 0;  
+  transform: translateY(20px);  
+}  
+
+/* Cambiar el color del texto en la tarjeta para asegurarse de que se vea */  
+.text-gray-200 {  
+  color: rgba(255, 255, 255, 0.8); /* Color blanco claro */  
+}

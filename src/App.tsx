@@ -10,6 +10,11 @@ import CollapseDefault from "./Colapse";
 import GalleryWithTab from "./Galery";
 import Form from "./Form";
 import RegisterForm from "./FormValidation";
+import FormNew from "./ProfileCard"
+import ObjectiveCard from './ObjectiveCard';
+import IntentionCard from './IntentionCard';
+import ResearchAreasCarda from './ResearchAreasCard';
+import HowToJoinCard from './HowToJoinCard';
 
 function App() {
 
@@ -19,10 +24,17 @@ function App() {
   <Navbar/>
   </header>
 
-   <div className=' relative pb-[700px] w-full bg-white'>
+   <div className=' relative pb-[700px] w-full  bg-white'>
 <CarouselDefault/>
 
+{/* 
+ <ObjectiveCard/>
+<IntentionCard/> */}
+<ResearchAreasCarda/> 
+<HowToJoinCard/>
 <Form/>
+{/* <FormNew/> */}
+
 {/* <RegisterForm/> */}
 
 {/* <Card/> */}

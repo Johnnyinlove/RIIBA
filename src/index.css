@@ -39,3 +39,19 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+
+
+/* Añadir esta clase en tu CSS */  
+.transition-height {  
+  transition: height 0.5s ease; /* Cambia el tiempo aquí según sea necesario */  
+  overflow: hidden;              /* Evita que el contenido se desborde durante la transición */  
+}  
+
+.hidden {  
+  height: 0;                     /* Altura del menú oculto */  
+}  
+
+.visible {  
+  height: auto;                  /* Altura automática para el menú visible */  
+}

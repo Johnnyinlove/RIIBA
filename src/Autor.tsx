@@ -2,7 +2,17 @@ import './App.css'
 import yo from '../public/Yovoy.jpg';
 import { useNavigate } from "react-router-dom";
 
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Tooltip,
+} from "@material-tailwind/react";
 
+
+ 
 function Autor() {
   // const [count, setCount] = useState(0)
 
@@ -18,6 +28,56 @@ function Autor() {
   return (
     <>
 
+
+
+    <Card className="w-96">
+      <CardHeader floated={false} className="h-80">
+        <img src={yo} alt="profile-picture" />
+      </CardHeader>
+      <CardBody className="text-center">
+        <Typography variant="h4 blue-gray" className="mb-2">
+          Juan Cruz Oduardo
+        </Typography>
+        <Typography  className=" text-blue-gray-300 font-medium" textGradient:true >
+          CEO / Co-Founder
+        </Typography>
+      </CardBody>
+      <CardFooter className="flex justify-center gap-7 pt-2">
+        <Tooltip content="Like">
+          <Typography
+            as="a"
+            href="#facebook"
+            variant="lead"
+            color="blue"
+            textGradient
+          >
+            <i className="fab fa-facebook" />
+          </Typography>
+        </Tooltip>
+        <Tooltip content="Follow">
+          <Typography
+            as="a"
+            href="#twitter"
+            variant="lead"
+            color="light-blue"
+            textGradient
+          >
+            <i className="fab fa-twitter" />
+          </Typography>
+        </Tooltip>
+        <Tooltip content="Follow">
+          <Typography
+            as="a"
+            href="#instagram"
+            variant="lead"
+            color="purple"
+            textGradient
+          >
+            <i className="fab fa-instagram" />
+          </Typography>
+        </Tooltip>
+      </CardFooter>
+    </Card>
 
 
     <div className='App'>
@@ -77,13 +137,13 @@ Básico: English
   <div className="col-sm-6">
     <div className="card">
 
-      <div className="card-body grid text-center">
+      <div className="card-body justify-center grid text-center">
 
-    <h5 className="card-title">Contáctame!!</h5>
+    <h5 className="card-title ">Contáctame!!</h5>
 
       <span className=" rounded-pill text-center-min">
     <a href="https://www.facebook.com/juan.cruzoduardo"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt="img" />
+    <img className="with h-16" src="https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png" alt="img" />
       </a>
 
       <div className="ms-2 me-auto">
@@ -94,7 +154,7 @@ Básico: English
 
       <span className=" rounded-pill text-center-min">
     <a href="https://t.me/Whatwho01"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/923/PNG/512/telegram_icon-icons.com_72055.png" alt="img" />
+    <img className="with h-16" src="https://cdn.icon-icons.com/icons2/923/PNG/512/telegram_icon-icons.com_72055.png" alt="img" />
       </a>
     <div className="ms-2 me-auto">
     <div className="fw-bold">Telegram</div>
@@ -104,7 +164,7 @@ Básico: English
 
       <span className=" rounded-pill text-center-min">
     <a href="https://www.linkedin.com/in/john-manito-bb4b02259"  rel='noopener' target="_blank">
-    <img className="with img-fluid rounded-circle"  src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="img" />
+    <img className="with h-16 img-fluid rounded-circle"  src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt="img" />
       </a>
 
     <div className="ms-2 me-auto">
@@ -114,7 +174,7 @@ Básico: English
 
       <span className=" rounded-pill text-center-min">
     <a href="https://github.com/Johnnyinlove"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2368/PNG/96/github_logo_icon_143772.png" alt="img" />
+    <img className="with h-16" src="https://cdn.icon-icons.com/icons2/2368/PNG/96/github_logo_icon_143772.png" alt="img" />
       </a>
 
     <div className="ms-2 me-auto">
@@ -124,7 +184,7 @@ Básico: English
 
       <span className=" rounded-pill text-center-min">
     <a href="https://www.notion.so/Getting-Started-on-Mobile-8d98ea3f4d1441c68f8a9d8bc4e9ba6f?pvs=4"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/notion_black_logo_icon_147102.png" alt="img" />
+    <img className="with h-16" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/notion_black_logo_icon_147102.png" alt="img" />
       </a>
 
     <div className="ms-2 me-auto">
@@ -134,7 +194,7 @@ Básico: English
     
       <span className=" rounded-pill text-center-min">
     <a href="mailto:johnmanito3@gmail.com"  rel='noopener' target="_blank">
-    <img className="with" src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" alt="img" />
+    <img className="with h-16 pt-2" src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" alt="img" />
       </a>
 
     <div className="ms-2 me-auto">
