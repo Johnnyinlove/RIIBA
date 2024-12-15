@@ -101,9 +101,9 @@ export default function SimpleRegistrationForm() {
         </Button>   
 
         {formData.showMessage && (  
-          <Typography className="mt-1 text-center w-64 max-w-screen-lg sm:w-96 font-normal">  
-            Felicidades, {formData.nombre}! Revise su correo electrónico.  
-          </Typography>  
+ <Typography className="mt-1 text-center w-64 max-w-screen-lg sm:w-96 font-normal text-xs sm:text-sm md:text-base lg:text-lg">  
+ Felicidades, {formData.nombre}!<br /> Revise su correo electrónico.  
+</Typography>
         )}  
       </form>  
     </Card>  
