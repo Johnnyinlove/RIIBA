@@ -61,7 +61,7 @@ const ProfileCardMiembros = ({ name, position, country, flagSrc, profilePicSrc, 
                     {country}  
                 </Typography>
 
-                {/* <div className="flex space-x-2">  
+                <div className="flex space-x-2">  
                     {socialLinks.facebook && (  
                         <IconButton href={socialLinks.facebook} target="_blank">  
                             <Facebook fontSize="small" />  
@@ -82,7 +82,7 @@ const ProfileCardMiembros = ({ name, position, country, flagSrc, profilePicSrc, 
                             <GitHub fontSize="small" />  
                         </IconButton>  
                     )}  
-                </div>   */}
+                </div>  
             </CardContent>  
         </Card>  
     );  

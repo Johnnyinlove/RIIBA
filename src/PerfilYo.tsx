@@ -13,6 +13,8 @@ import {
 
   import NavBar  from "./NavInicio";
   export default function PerfilYo() {
+  
+
     return (
       <>
  <header>
@@ -24,11 +26,11 @@ import {
                   position='Desarrollador Web'   
                   country='Cuba'   
                   flagSrc='https://flagcdn.com/w320/cu.png'   
-                  // socialLinks={
-                  //   facebook: "https://facebook.com/carlos",  
-                  //   twitter: "https://twitter.com/carlos",  
-                  //   linkedin: "https://linkedin.com/in/carlos",  
-                  //   github: "https://github.com/carlos"}   
+                  socialLinks={{
+                    facebook: "https://facebook.com/carlos",  
+                    twitter: "https://twitter.com/carlos",  
+                    linkedin: "https://linkedin.com/in/carlos",  
+                    github: "https://github.com/carlos"}}   
               />
 
 </>

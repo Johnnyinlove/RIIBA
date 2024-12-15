@@ -51,7 +51,7 @@
                   position={profile.position}   
                   country={profile.country}   
                   flagSrc={profile.flagSrc}   
-                //    socialLinks={profile.socialLinks}   
+                   socialLinks={index}   
               />  
           ))}  
       </div>  
