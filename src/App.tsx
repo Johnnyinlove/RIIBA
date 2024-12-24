@@ -7,12 +7,8 @@ import ResearchAreasCarda from './ResearchAreasCard';
 import HowToJoinCard from './HowToJoinCard';
 import ScrollToTopButton from './ScrollToTopButton';
 
-import { Facebook, Twitter, LinkedIn, GitHub, ArrowUpward } from '@material-ui/icons';  
 
 
-import {    
-  Button, 
-} from '@material-ui/core'; 
 
 
 function App() {

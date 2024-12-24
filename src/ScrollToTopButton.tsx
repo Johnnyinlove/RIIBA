@@ -1,7 +1,7 @@
 // ScrollToTopButton.js  
-import React, { useEffect, useState } from 'react';  
+import { useEffect, useState } from 'react';  
 import { Button,} from '@material-ui/core'; 
-import { Facebook, Twitter, LinkedIn, GitHub, ArrowUpward } from '@material-ui/icons';  
+import {  ArrowUpward } from '@material-ui/icons';  
 
 export default function ScrollToTopButton() {  
     const [visible, setVisible] = useState(false); 

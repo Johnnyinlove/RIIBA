@@ -26,7 +26,6 @@ export default function Navbar() {
 
 
  
-    const [isHovered, setIsHovered] = useState(false);  
   
    
 

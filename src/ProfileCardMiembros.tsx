@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';  
 import { Card, CardContent, Typography, IconButton } from '@material-ui/core';  
-import { Facebook, Twitter, LinkedIn, GitHub, ArrowUpward } from '@material-ui/icons';  
+import { Facebook, Twitter, LinkedIn, GitHub } from '@material-ui/icons';  
 
 // , socialLinks
 

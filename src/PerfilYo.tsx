@@ -1,13 +1,6 @@
-import {
-    Card,
-    Typography,
-    IconButton,
-    Tooltip,
-  } from "@material-tailwind/react";
 
   import yo from "../public/Yovoy.jpg"
   
-  import { X, Facebook, Instagram } from "iconoir-react";
 
   import ProfileCardMiembros from "./ProfileCardMiembros";
 
