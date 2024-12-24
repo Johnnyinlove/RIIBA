@@ -4,7 +4,6 @@ import App from './App.tsx'
 import './index.css'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import React from 'react'
-import Autor from './Autor.tsx'
 import NotFound from './NotFound.tsx'
 import Miembros from "./Miembros.tsx"
 
