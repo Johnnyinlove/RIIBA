@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './NavInicio';
 import ResearchAreasCard from "./AreaInvestigacion"
 import BenefitsCard from './BenefitsCard';
+import Footer from './Footer';
 function Red() {
 
   return (
@@ -25,6 +26,9 @@ function Red() {
 
 
 
+   <footer>
+<Footer/>
+   </footer>
    
     </>
   )

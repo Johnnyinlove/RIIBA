@@ -912,12 +912,12 @@
   dependencies:
     "@babel/runtime" "^7.23.9"
 
-"@mui/icons-material@^6.1.2":
-  version "6.1.2"
-  resolved "https://registry.npmjs.org/@mui/icons-material/-/icons-material-6.1.2.tgz"
-  integrity sha512-7NNcjW5JoT9jHagrVbARA1o41vQY2xezDamtke+mEKKZmsJyejfRBOacSrPDfjZQ//lyhIjNKyzAwisxYJR47w==
+"@mui/icons-material@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.2.1.tgz#9f92e0c8f33db871d6afa2232d0e2daa4545dbe3"
+  integrity sha512-bP0XtW+t5KFL+wjfQp2UctN/8CuWqF1qaxbYuCAsJhL+AzproM8gGOh2n8sNBcrjbVckzDNqaXqxdpn+OmoWug==
   dependencies:
-    "@babel/runtime" "^7.25.6"
+    "@babel/runtime" "^7.26.0"
 
 "@mui/lab@^6.0.0-beta.16":
   version "6.0.0-beta.16"
