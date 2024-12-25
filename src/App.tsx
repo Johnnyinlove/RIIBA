@@ -3,15 +3,15 @@ import Navbar from "./NavInicio";
 import CarouselDefault from "./CarouselSlider";
 import Footer from "./Footer";
 import Form from "./Form";
-import ResearchAreasCarda from './ResearchAreasCard';
-import HowToJoinCard from './HowToJoinCard';
 import ScrollToTopButton from './ScrollToTopButton';
-
-
-
+import Cards from './Cards'
+import { listaBienvenido, listaUnirse } from'./Data' ;
 
 
 function App() {
+// Definimos el array de ítems  
+
+
 
   return (
     <>
@@ -21,9 +21,20 @@ function App() {
 
    <div className=' relative pb-[700px] w-full  bg-white'>
 <CarouselDefault/>
+<Cards
+title={listaBienvenido.title}
+subtitle={listaBienvenido.subtitle}
+listaItems={[]}
 
-<ResearchAreasCarda/> 
-<HowToJoinCard/>
+/>
+
+<Cards
+title={listaUnirse.title}
+subtitle={listaUnirse.subtitle}
+listaItems={listaUnirse.listaItems}
+
+/>
+
 <Form/>
 
 <ScrollToTopButton/>

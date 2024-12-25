@@ -1,11 +1,13 @@
-import ObjectiveCard from './ObjectiveCard';
-import IntentionCard from './IntentionCard';
 import './App.css'
 import Navbar from './NavInicio';
-import ResearchAreasCard from "./AreaInvestigacion"
-import BenefitsCard from './BenefitsCard';
 import Footer from './Footer';
+import Cards from "./Cards";
+import { listaAreaInvestigacion, listaBeneficios, listaIntencion, listaObjetivo } from'./Data' ;
+import ScrollToTopButton from './ScrollToTopButton';
+
 function Red() {
+
+  
 
   return (
     <>
@@ -15,13 +17,36 @@ function Red() {
   </header>
 
 <div className='pt-36 pb-[700px] w-full  '>
-<ObjectiveCard/>
+<Cards
+title={listaObjetivo.title}
+subtitle={listaObjetivo.subtitle}
+listaItems={listaObjetivo.listaItems}
 
-<IntentionCard/>
+/>
 
-<ResearchAreasCard/>
+<Cards
+title={listaIntencion.title}
+subtitle={listaIntencion.subtitle}
+listaItems={listaIntencion.listaItems}
 
-<BenefitsCard/>
+/>
+<Cards
+title={listaAreaInvestigacion.title}
+subtitle={listaAreaInvestigacion.subtitle}
+listaItems={listaAreaInvestigacion.listaItems}
+
+/>
+
+<Cards
+title={listaBeneficios.title}
+subtitle={listaBeneficios.subtitle}
+listaItems={listaBeneficios.listaItems}
+
+/>
+
+<ScrollToTopButton/>
+
+
 </div>
 
 

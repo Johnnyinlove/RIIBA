@@ -55,3 +55,17 @@ body {
 .visible {  
   height: auto;                  /* Altura automática para el menú visible */  
 }
+
+
+@keyframes bounce {  
+  0%, 100% {  
+      transform: translateY(0); /* Posición original */  
+  }  
+  50% {  
+      transform: translateY(-5px); /* Mueve el icono hacia arriba */  
+  }  
+}  
+
+.bounce-icon {  
+  animation: bounce 1s infinite; /* Repite la animación indefinidamente */  
+}

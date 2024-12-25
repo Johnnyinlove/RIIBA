@@ -2,22 +2,14 @@ import { useState } from "react";
 import icon from "../public/logo.png";  
 import { Link, useLocation } from "react-router-dom";  
 import { Button,} from '@material-ui/core'; 
-
+import { navItems } from "./Data";
 export default function Navbar() {  
   const location = useLocation(); // Captura la ubicación actual  
   const [isOpen, setIsOpen] = useState(false);  
 
   const toggleMenu = () => setIsOpen(!isOpen);  
 
-  const navItems = [  
-    { name: "Inicio", path: "/RIIBA/" },  
-    { name: "La Red", path: "/RIIBA/Red" },  
-    { name: "Actualidad", path: "#" },  
-    { name: "Miembros", path: "/RIIBA/Miembros" },  
-    { name: "Visibilidad", path: "#" },  
-    { name: "Noticias", path: "#" },  
-    { name: "Contacto", path: "#" },  
-  ];  
+
 
   const handleLinkClick = () => {  
     window.scrollTo(0, 0); // Desplaza la ventana a la parte superior  

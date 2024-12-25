@@ -1,22 +1,22 @@
 import { useEffect, useRef, useState } from 'react';  
-import { Card, CardContent, Typography } from '@material-ui/core';  
+import { Card, CardContent, Typography, List, ListItem } from '@material-ui/core';  
 
-const ObjectiveCard = () => {  
+const Cards = ({ title, subtitle, listaItems }: any) => {  
     const [isVisible, setIsVisible] = useState(false);  
     const cardRef = useRef(null);  
 
+    
     useEffect(() => {  
         const observer = new IntersectionObserver(  
             ([entry]) => {  
+                // Detectar si el componente está visible en la ventana  
                 if (entry.isIntersecting) {  
-                    // Si el componente está visible en la ventana, establecerlo como visible  
                     setIsVisible(true);  
                 } else {  
-                    // Si el componente no está visible, ocultarlo  
                     setIsVisible(false);  
                 }  
             },  
-            { threshold: [0] } // Cambiar el umbral para que se active tan pronto como el componente entre en la vista  
+            { threshold: [0] } // Umbral para activarse cuando el componente entra en vista  
         );  
 
         if (cardRef.current) {  
@@ -28,7 +28,7 @@ const ObjectiveCard = () => {
                 observer.unobserve(cardRef.current);  
             }  
         };  
-    }, []);   
+    }, []);  
 
     return (  
         <Card  
@@ -37,28 +37,37 @@ const ObjectiveCard = () => {
                 opacity: isVisible ? 1 : 0,  
                 transform: isVisible ? 'translateY(0)' : 'translateY(90px)',  
                 transition: 'opacity 1s ease, transform 1s ease', // Tiempo de transición  
-            }}   
+            }}  
             className="max-w-80 mx-auto my-10 shadow-lg"  
         >  
             <CardContent>  
                 <Typography   
                     variant="h5"   
-                    component="div"   
-                    className="text-center font-bold mb-4"   
-                    style={{ fontSize: '1.8rem' }} // Ajusta el tamaño de la fuente aquí  
+                    component="h2"   
+                    className="font-bold mb-4 text-center"   
+                    style={{ fontSize: '1.8rem' }} // Aumentar tamaño de la fuente del título  
                 >  
-                    Objetivo  
+                    {title}  
                 </Typography>  
                 <Typography   
                     variant="body1"   
-                    className="text-gray-700 text-base"   
-                    style={{ fontSize: '1.2rem' }} // Ajusta el tamaño de la fuente aquí  
+                    className="text-gray-700 mb-4"   
+                    style={{ fontSize: '1.2rem' }} // Aumentar tamaño de la fuente del cuerpo  
                 >  
-        La Red Internacional de Investigación en Bienestar Animal (RED-RIIBA) tiene como objetivo principal promover y coordinar esfuerzos de investigación a nivel global para mejorar el bienestar de los animales en diversos sistemas de producción. A través de la colaboración interdisciplinaria y el intercambio de conocimientos, buscamos desarrollar soluciones innovadoras y sostenibles que contribuyan a la salud y el bienestar de los animales, así como a la seguridad alimentaria.  
+                    {subtitle}  
                 </Typography>  
+                <List>  
+                    {listaItems.map((item:any, index:any) => ( // Mapeamos el array de ítems  
+                        <ListItem key={index}>  
+                            <Typography variant="body2" style={{ fontSize: '1rem' }}>  
+                                {index+1}. {item.texto}  
+                            </Typography>  
+                        </ListItem>  
+                    ))}  
+                </List>  
             </CardContent>  
         </Card>  
     );  
 };  
 
-export default ObjectiveCard;
+export default Cards;
