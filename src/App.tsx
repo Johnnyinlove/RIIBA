@@ -21,6 +21,9 @@ function App() {
 
    <div className=' relative pb-[700px] w-full  bg-white'>
 <CarouselDefault/>
+
+
+ 
 <Cards
 title={listaBienvenido.title}
 subtitle={listaBienvenido.subtitle}

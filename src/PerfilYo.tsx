@@ -3,8 +3,11 @@
   
 
   import ProfileCardMiembros from "./ProfileCardMiembros";
+  import ImageUploader from './ImageUploader'; // Ajusta la ruta según tu estructura  
 
   import NavBar  from "./NavInicio";
+
+
   export default function PerfilYo() {
   
 
@@ -13,6 +16,11 @@
  <header>
   <NavBar/>
   </header>
+  
+  <div className="min-h-screen flex items-center justify-center bg-gray-100">  
+        <ImageUploader />  
+      </div>
+
       <ProfileCardMiembros   
                   profilePicSrc={yo}   
                   name='Juan Cruz Oduardo'   
@@ -26,6 +34,7 @@
                     // linkedin: "https://linkedin.com/in/carlos",  
                     github: "https://github.com/Johnnyinlove"}}   
               />
+
 
 </>
     );
